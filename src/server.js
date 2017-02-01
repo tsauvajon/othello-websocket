@@ -1,16 +1,19 @@
 var app = require('express')();
 var server = require('http').createServer(app);
-var swig = require('swig');
+// var swig = require('swig');
 var path = require('path');
-
+var public_dir = path.join(__dirname + '/../public/');
 //setup view engine
-app.engine('html', swig.renderFile);
-app.set('view engine', 'html');
+// app.engine('html', swig.renderFile);
+// app.set('view engine', 'html');
 
 // server + routing
 server.listen(3000)
 app.get('/', function (req,res) {
-  res.render('index');
+  res.sendFile(public_dir + '/index.html');
+});
+app.get('/bundle\.js',function(req,res){
+  res.sendFile(public_dir + '/bundle.js');
 });
 
 var io = require('socket.io')(server);
