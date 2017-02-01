@@ -22,6 +22,8 @@ io.on('connection', function (socket) {
   });
 });
 
+// http://aviadas.com/blog/2015/09/06/building-realtime-apps-with-react/
+
 
 // default react-create-app template
 

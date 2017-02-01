@@ -1,8 +1,20 @@
-<script src="/socket.io/socket.io.js"></script>
-<script>
-  var socket = io();
-  socket.on('server:event', function(data) {
-    console.log(data);
-    socket.emit('client:event', {socket: 'io' });
-  });
-</script>
+<!doctype html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/JSXTransformer.js"></script>
+</head>
+<body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+
+    
+
+    // socket.on('server:event', function(data) {
+    //   console.log(data);
+    //   socket.emit('client:event', {socket: 'io' });
+    // });
+  </script>
+</body>
+</html>
