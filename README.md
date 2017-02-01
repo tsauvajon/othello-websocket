@@ -1,5 +1,7 @@
 
 # Othello / Reversi
+2 player Othello game, in real-time with WebSockets
+
 ## Get started
 * Clone the repository
 * Run :
@@ -7,8 +9,8 @@
 npm install
 npm run start
 ```
-* Open your web browser at http://localhost:3000/
+* browse [http://localhost:3000/](http://localhost:3000/)
 
 
 ## ...
-Coded using : react + node + socket.io ...
+Coded using : React + node.js + socket.io + express ...
