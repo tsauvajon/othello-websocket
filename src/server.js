@@ -3,9 +3,6 @@ var server = require('http').createServer(app);
 // var swig = require('swig');
 var path = require('path');
 var public_dir = path.join(__dirname + '/../public/');
-//setup view engine
-// app.engine('html', swig.renderFile);
-// app.set('view engine', 'html');
 
 // server + routing
 server.listen(3000)
